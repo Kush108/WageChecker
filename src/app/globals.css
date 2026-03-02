@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #050b14;
+  color: #e6edf3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep tap targets comfortable */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(34, 197, 94, 0.22);
+}
+
+/* Print styles for report */
+@media print {
+  body {
+    background: #ffffff;
+    color: #0b1220;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-reset-shadow {
+    box-shadow: none !important;
+  }
+  .print-card {
+    border: 1px solid #e2e8f0 !important;
+  }
+}
+
