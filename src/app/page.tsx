@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main>
       {/* HERO */}
-      <section className="bg-primary text-white">
+      <section className="bg-background text-white">
         <Container className="py-12">
           <div className="mx-auto w-full max-w-[560px]">
             <div className="text-[12px] font-semibold tracking-[0.12em] text-accent-green">
@@ -15,7 +15,7 @@ export default function HomePage() {
             <h1 className="mt-3 text-h1-mobile md:text-h1-desktop">
               Were you paid correctly?
             </h1>
-            <p className="mt-4 text-body text-white/75">
+            <p className="mt-4 text-body text-white/90">
               Ontario workers lose millions yearly to unpaid overtime, missed stat
               holiday pay, and illegal shift cancellations. Check your last pay
               period in 2 minutes — free.
@@ -25,7 +25,7 @@ export default function HomePage() {
               <ButtonLink href="/check" className="min-h-[56px] text-[16px] font-semibold">
                 Check My Pay Now →
               </ButtonLink>
-              <div className="mt-3 text-caption text-white/70">
+              <div className="mt-3 text-caption text-white/60">
                 Anonymous. No login. No personal info required.
               </div>
             </div>
@@ -34,7 +34,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST SIGNALS */}
-      <section className="py-10">
+      <section className="bg-surface py-10">
         <Container>
           <div className="-mx-5 flex gap-4 overflow-x-auto px-5 pb-2">
             <div className="min-w-[260px]">
