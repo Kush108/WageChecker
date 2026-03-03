@@ -2,7 +2,6 @@ import { Container } from "@/components/ui/Container"
 import { Card } from "@/components/ui/Card"
 import { ButtonLink } from "@/components/ui/ButtonLink"
 
-
 export default function HomePage() {
   return (
     <main>
