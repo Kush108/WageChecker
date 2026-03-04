@@ -19,13 +19,24 @@ export const metadata: Metadata = {
     "unpaid wages Ontario",
     "wage theft checker Canada"
   ],
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: "Were you paid correctly? Check free in 2 minutes.",
     description:
       "Ontario workers lose millions to ESA violations. Check your last pay period anonymously.",
     url: "https://wagechecker.ca",
     siteName: "Wage Checker",
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: "website"
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Were you underpaid?',
+    description: 'Free Ontario ESA violation checker. Anonymous. 2 minutes.',
+    images: ['/og-image.png'],
   }
 }
 
