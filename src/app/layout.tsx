@@ -8,9 +8,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Ontario Wage Checker — Did Your Employer Pay You Correctly?",
+  title: "Were you underpaid? Free Ontario ESA Check — wagechecker.ca",
   description:
-    "Free ESA violation checker for Ontario workers. Check overtime pay, stat holiday pay, and shift cancellation rights in 2 minutes. Anonymous, no login required.",
+    "Ontario workers lose millions yearly to unpaid overtime, missed stat holiday pay, and illegal shift cancellations. Check your last pay period free in 2 minutes. Anonymous, no login required.",
   keywords: [
     "Ontario ESA calculator",
     "overtime pay Ontario",
