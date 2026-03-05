@@ -29,7 +29,7 @@ export async function POST(request: Request) {
               description:
                 "Full violation breakdown, exact calculations, employer message template, and next steps"
             },
-            unit_amount: 1900
+            unit_amount: 100
           },
           quantity: 1
         }
