@@ -25,7 +25,7 @@ export async function POST(request: Request) {
           price_data: {
             currency: "cad",
             product_data: {
-              name: "Ontario ESA Wage Report",
+              name: "ESA Wage Report",
               description:
                 "Full violation breakdown, exact calculations, employer message template, and next steps"
             },
