@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
+  alternates: {
+  canonical: 'https://wagechecker.ca',
+  },
   openGraph: {
     title: "Were you paid correctly? Check free in 2 minutes.",
     description:
