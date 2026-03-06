@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Were you underpaid? Free Ontario ESA Check — wagechecker.ca",
   description:
     "Ontario workers lose millions yearly to unpaid overtime, missed stat holiday pay, and illegal shift cancellations. Check your last pay period free in 2 minutes. Anonymous, no login required.",
+  verification: {
+    google: 'QTiN3pf-wBqNToECb7mb6lDDUDjTiEUJXuSyAr1Wyeg'
+  },
   keywords: [
     "Ontario ESA calculator",
     "overtime pay Ontario",
