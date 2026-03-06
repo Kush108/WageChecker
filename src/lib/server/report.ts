@@ -117,7 +117,9 @@ export async function generateReport(inputs: QuizAnswers) {
           `4. 44 hours or less = zero overtime. Never flag this as a violation.\n` +
           `5. Write in plain English. Workers are not lawyers.\n` +
           `6. Firm, factual, never aggressive.\n` +
-          `7. Always include the disclaimer at the end.`,
+          `7. Always include the disclaimer at the end.` +
+          `8. Never use [Worker's Name] or any placeholder in violation headings. ` +
+          `Use the actual violation name only, e.g. "Unpaid Overtime" or "Stat Holiday Premium Pay".`
       },
       {
         role: "user",
