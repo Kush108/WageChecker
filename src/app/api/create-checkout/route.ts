@@ -46,7 +46,7 @@ export async function POST(request: Request) {
                 "Full violation breakdown, exact calculations, " +
                 "employer message template & next steps"
             },
-            unit_amount: 100  // $19.00 CAD
+            unit_amount: 1900  // $19.00 CAD
           },
           quantity: 1
         }
