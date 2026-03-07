@@ -32,10 +32,12 @@ export async function generateReport(inputs: QuizAnswers) {
                              : 0
 
   // STAT HOLIDAY
-  const statViolation    = inputs.statHoliday === "yes"
-  const statOwed         = statViolation
-                             ? parseFloat((hours * rate * 0.5).toFixed(2))
-                             : 0
+  
+  const statViolation   = inputs.statHoliday === "yes"
+  const statHoursWorked = inputs.statHolidayHours ?? 8
+  const statOwed        = statViolation
+    ? parseFloat((statHoursWorked * rate * 0.5).toFixed(2))
+    : 0
 
   // VACATION PAY
   const vacationViolation = inputs.vacationPay === "never" ||

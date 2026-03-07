@@ -14,6 +14,7 @@ export type QuizAnswers = {
   shiftCancelled: ShiftCancelled
   cancelledShiftHours?: number
   statHoliday: StatHoliday
+  statHolidayHours?: number
   vacationPay: VacationPay
   tenure: Tenure
   email?: string
