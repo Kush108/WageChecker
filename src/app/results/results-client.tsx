@@ -185,20 +185,65 @@ export function ResultsClient() {
         </ul>
 
         <div className="mt-6">
-          <Button onClick={unlock} disabled={checkingOut}>
-            {checkingOut ? "Redirecting..." : "Unlock My Full Report — $19"}
-          </Button>
-          <div className="mt-3 text-center text-caption text-muted">
-            🔒 Secure payment via Stripe
+          {/* Value framing — makes $19 feel trivial */}
+          <div className="mb-4 rounded-xl border border-amber-500/30 bg-amber-500/10 p-4 text-center">
+            <div className="text-xs font-semibold uppercase tracking-wider text-amber-400">
+              Think about it this way
+            </div>
+            <div className="mt-1 text-sm text-amber-200">
+              Typical ESA recovery: <span className="font-bold">$300–$2,000</span>.
+              This report costs <span className="font-bold">$19</span>.
+              {" "}That is less than 1% of what you may be owed.
+            </div>
           </div>
-          <div className="mt-1 text-center text-caption text-muted">
-            Report delivered to {answers.email} within 60 seconds of payment
+
+          {/* What you get */}
+          <div className="mb-4 rounded-xl border border-slate-700 bg-slate-800/50 p-4">
+            <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
+              Your full report includes
+            </div>
+            <div className="space-y-1 text-sm text-slate-300">
+              <div className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Exact dollar amount for each violation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Step-by-step math your employer hopes you never see</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Copy-paste message to send your employer today</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Whether to file a Ministry of Labour complaint</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Your exact next 3 steps</span>
+              </div>
+            </div>
+          </div>
+
+          <Button onClick={unlock} disabled={checkingOut}>
+            {checkingOut ? "Redirecting to payment..." : "Unlock My Full Report — $19 CAD"}
+          </Button>
+
+          {/* Trust signals */}
+          <div className="mt-3 flex flex-col items-center gap-1">
+            <div className="text-center text-caption text-muted">
+              🔒 Secured by Stripe · SSL encrypted · No card stored
+            </div>
+            <div className="text-center text-caption text-muted">
+              One-time payment · No subscription · No recurring charges
+            </div>
+            <div className="text-center text-caption text-muted">
+              Report delivered to {answers.email} within 60 seconds
+            </div>
           </div>
         </div>
 
-        <div className="mt-5 text-center text-caption text-muted">
-          Typical ESA claims recover $300–$2,000. The report costs $19.
-        </div>
       </Card>
     </div>
   )

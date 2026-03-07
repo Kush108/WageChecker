@@ -209,7 +209,7 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-
+      
       {/* FOOTER */}
       <footer className="border-t border-border pb-12 pt-8">
         <Container>
@@ -224,8 +224,22 @@ export default function HomePage() {
               © 2026{" "}
               <a href="/" className="text-muted hover:text-primary transition-colors">
                 wagechecker.ca
-              </a>{" "}
-              · Anonymous by design
+              </a>
+              {" · "}
+              <a href="/privacy" className="text-muted hover:text-primary transition-colors">
+                Privacy
+              </a>
+              {" · "}
+              <a href="/terms" className="text-muted hover:text-primary transition-colors">
+                Terms
+              </a>
+              {" · "}
+              <a href="mailto:support@wagechecker.ca" className="text-muted hover:text-primary transition-colors">
+                support@wagechecker.ca
+              </a>
+            </p>
+            <p className="mt-2">
+              Anonymous by design · Not affiliated with the Ontario government
             </p>
           </div>
         </Container>
