@@ -8,6 +8,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.wagechecker.ca'),
   title: "Were you underpaid? Free Ontario ESA Check — wagechecker.ca",
   description:
     "Ontario workers lose millions yearly to unpaid overtime, missed stat holiday pay, and illegal shift cancellations. Check your last pay period free in 2 minutes. Anonymous, no login required.",
